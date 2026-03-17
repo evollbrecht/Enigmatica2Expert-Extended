@@ -151,7 +151,7 @@ zenClass MixinLensMining {
 zenClass MixinTileEntityBioReactor {
     #mixin ModifyConstant {method: "updateEntity", constant: {intValue: 2}}
     function buffPowerGeneration(value as int) as int {
-        return 4; // producePerTick = (amount * 4)²
+        return 20; // producePerTick = (amount * 20)²
     }
 }
 
