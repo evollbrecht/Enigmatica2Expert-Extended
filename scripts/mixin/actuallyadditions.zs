@@ -46,7 +46,7 @@ zenClass MixinItemFillWand {
 zenClass MixinItemPotionRing {
     #mixin ModifyConstant {method: "func_77663_a", constant: {longValue: 10}}
     function buffDuration(value as long) as long {
-        return 10000L;
+        return 100000L;
     }
 }
 
