@@ -216,7 +216,7 @@ mods.extrautils2.Resonator.add(<extrautils2:decorativesolid:6> * 64, <extrautils
 
 // Make quartzburnt harder (was 8 GP)
 mods.extrautils2.Resonator.remove(<extrautils2:decorativesolid:7>);
-mods.extrautils2.Resonator.add(<extrautils2:decorativesolid:7>, <minecraft:quartz_block>, 80 * 100);
+mods.extrautils2.Resonator.add(<extrautils2:decorativesolid:7>, <actuallyadditions:block_misc:2>, 80 * 100);
 
 // Upgrade base from demonic ingot
 mods.extrautils2.Resonator.remove(<extrautils2:ingredients:9>);
