@@ -282,11 +282,15 @@ craft.remake(<extrautils2:screen>, ['pretty',
 });
 
 // *======= Ring Of The Flying Squid =======*
-remake('Ring Of The Flying Squid',
-  <extrautils2:chickenring:1>,
-  [[<extrautils2:ineffableglass>, <actuallyadditions:item_misc:19>, <extrautils2:ineffableglass>],
-    [<ore:plateDenseGold>, <extrautils2:chickenring>, <ore:plateDenseGold>],
-    [<minecraft:golden_apple>, <extrautils2:goldenlasso>.withTag({ Animal: { id: 'minecraft:squid' } }), <minecraft:golden_apple>]]);
+craft.remake(<extrautils2:chickenring:1>, ['pretty',
+  '  o  ',
+  'E C E',
+  '  G  '], {
+  'o': <minecraft:web>,
+  'E': <extrautils2:ineffableglass>,
+  'C': <extrautils2:chickenring>,
+  'G': <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}}),
+});
 
 // *======= Angel Ring =======*
 for i in 0 .. 6 {
