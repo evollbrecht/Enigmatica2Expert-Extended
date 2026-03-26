@@ -41,7 +41,6 @@
 	{
 		uid: "120a8326",
 		type: "item",
-		item: "minecraft:end_stone",
-		count: 64
+		item: "additionalcompression:endstone_compressed 1 2"
 	}]
 }
