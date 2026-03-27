@@ -114,12 +114,27 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
   val forgePlayer = !isNull(universe) ? universe.getPlayer(e.player.getUUID()) : null;
 
   /**
+  * Determine conflux level tag
+  */
+  var confluxKey = '';
+  var confluxLevel = 0;
+  for i, k in 'i ii iii iv v'.split(' ') {
+    if (e.reward.tags has 'conflux_' ~ k) {
+      confluxLevel = i;
+      confluxKey = k;
+      break;
+    }
+  }
+
+  /**
   * Endorse player with message to whole server as its finished chapter
   */
-  if (e.reward.tags has 'chapstart' || e.reward.tags has 'chapcomplete' || e.reward.tags has 'packcomplete') {
-    val chapterName = e.reward.tags has 'packcomplete'
-      ? 'Enigmatica 2: Expert - Extended'
-      : getChapterName(e);
+  if (e.reward.tags has 'chapstart' || e.reward.tags has 'chapcomplete' || e.reward.tags has 'packcomplete' || (confluxLevel > 0 && e.reward.tags has 'team')) {
+    val chapterName as IData = e.reward.tags has 'packcomplete'
+      ? [' __***', { text: 'Enigmatica 2: Expert - Extended', underlined: true, color: 'yellow' }, '***__ ']
+      : confluxLevel > 0
+        ? [' __', { text: 'Conflux ' ~ confluxKey.toUpperCase(), underlined: true, color: 'gold' }, '__ ']
+        : [' __**', { text: getChapterName(e), underlined: true, color: 'yellow' }, '**__ '];
     val chaps = getChapterCount(e.player);
 
     var style_name as string;
@@ -142,6 +157,13 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
     else if (e.reward.tags has 'packcomplete') {
       style_paragraph = '# `';
       style_event = 'has completed';
+      style_tail = 'after ';
+      style_showTime = true;
+      style_showChapters = false;
+    }
+    else if (confluxLevel > 0) {
+      style_paragraph = '### `';
+      style_event = 'achieved';
       style_tail = 'after ';
       style_showTime = true;
       style_showChapters = false;
@@ -203,9 +225,10 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
     }
 
     val base_extra = [
-      { text: style_name, color: 'aqua' }, '` ', { text: style_event, color: 'gray' },
-      ' __**', { text: chapterName, underlined: true, color: 'yellow' }, '**__ ',
-      { text: style_tail, color: 'gray' },
+      { text: style_name, color: 'aqua' }, '` ',
+      { text: style_event, color: 'gray' }
+      ] as IData + chapterName + [
+      { text: style_tail, color: 'gray' }
     ] as IData;
 
     var details_extra = [] as IData;
@@ -239,28 +262,11 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
   /**
   * Conflux rewards
   */
-  for k in 'i ii iii iv v'.split(' ') {
-    if (e.reward.tags has 'conflux_' ~ k) {
-      e.player.addGameStage('conflux_' ~ k);
-      server.commandManager.executeCommandSilent(server,
-        '/ranks add ' ~ e.player.name ~ ' conflux_' ~ k
-      );
-
-      // notifyEveryone(e.player, 'e2ee.player_achieved', e.reward.quest.titleText.formattedText);
-      val data as IData = {
-        text : '### `', color: 'dark_gray', extra: [
-          { text: e.player.nickname(), color: 'aqua' },
-          '` ',
-          { text: 'achieved', color: 'gray' },
-          ' __',
-          { text: 'Conflux ' ~ k.toUpperCase(), underlined: true, color: 'gray' },
-          '__ ',
-          { text: 'after ', color: 'gray' },
-          { text: formatPlayTime(forgePlayer), color: 'gold' },
-          ' of play! ```Congrats!```',
-        ] };
-      tellraw(data);
-    }
+  if (confluxLevel > 0 && e.reward.tags has 'personal') {
+    e.player.addGameStage('conflux_' ~ confluxKey);
+    server.commandManager.executeCommandSilent(server,
+      '/ranks add ' ~ e.player.name ~ ' conflux_' ~ confluxKey
+    );
   }
 
   /**
