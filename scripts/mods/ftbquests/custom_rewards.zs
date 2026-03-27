@@ -11,6 +11,7 @@ import mods.zenutils.PlayerStat;
 import scripts.do.hand_over_your_items.tellrawItemObj;
 
 import native.com.feed_the_beast.ftblib.lib.data.ForgePlayer;
+
 import native.com.feed_the_beast.ftbquests.net.MessageTogglePinned;
 import native.com.feed_the_beast.ftbquests.quest.ServerQuestFile;
 import native.com.feed_the_beast.ftbutilities.data.FTBUtilitiesPlayerData;
@@ -73,31 +74,31 @@ function formatPlayTime(player as ForgePlayer) as string {
 // }
 
 static chapterNames as string[string] = {
-  'actually additions': '🧰Actually Additions',
-  'advanced rocketry': '🚀Advanced Rocketry',
-  'applied energetics': '🗃️AE2',
-  'astral sorcery': '🌠Astral Sorcery',
-  'blood magic': '🩸Blood Magic',
-  'draconic evolution': '🐲Draconic Evolution',
-  'ender io': '🔮Ender Io',
-  'environmental tech': '⬛Environmental Tech',
-  'extra utilities': '👜Extra Utilities 2',
-  'immersive engineer': '🛢️Immersive Engineer',
-  'immersive engineering': '🛢️Immersive Engineer',
-  'industrial foregoing': '🏭Industrial Foregoing',
-  'nuclearcraft overh': '☢️NuclearCraft',
+  'actually additions'     : '🧰Actually Additions',
+  'advanced rocketry'      : '🚀Advanced Rocketry',
+  'applied energetics'     : '🗃️AE2',
+  'astral sorcery'         : '🌠Astral Sorcery',
+  'blood magic'            : '🩸Blood Magic',
+  'draconic evolution'     : '🐲Draconic Evolution',
+  'ender io'               : '🔮Ender Io',
+  'environmental tech'     : '⬛Environmental Tech',
+  'extra utilities'        : '👜Extra Utilities 2',
+  'immersive engineer'     : '🛢️Immersive Engineer',
+  'immersive engineering'  : '🛢️Immersive Engineer',
+  'industrial foregoing'   : '🏭Industrial Foregoing',
+  'nuclearcraft overh'     : '☢️NuclearCraft',
   'nuclearcraft overhauled': '☢️NuclearCraft',
-  'thermal expansion': '🌡️Thermal Expansion',
-  'twilight forest': '🌳The Twilight Forest',
-  animals: '🐄Animals',
-  botania: '🌷Botania',
-  computers: '🖥️Computers',
-  forestry: '🌴Forestry',
-  industrialcraft: '🔌IC2',
-  mekanism: '⚙️Mekanism',
-  rftools: '🎛️Rftools',
-  thaumcraft: '🦯Thaumcraft',
-  utils: '🍎Utilities',
+  'thermal expansion'      : '🌡️Thermal Expansion',
+  'twilight forest'        : '🌳The Twilight Forest',
+  'animals'                : '🐄Animals',
+  'botania'                : '🌷Botania',
+  'computers'              : '🖥️Computers',
+  'forestry'               : '🌴Forestry',
+  'industrialcraft'        : '🔌IC2',
+  'mekanism'               : '⚙️Mekanism',
+  'rftools'                : '🎛️Rftools',
+  'thaumcraft'             : '🦯Thaumcraft',
+  'utils'                  : '🍎Utilities',
 };
 
 function getChapterName(e as mods.zenutils.ftbq.CustomRewardEvent) as string {
@@ -178,8 +179,8 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
           (member.isOnline() ? '§f' : '§7') ~ name,
         ] as string[];
       }
-      playerTimes.sort(function(a as string[], b as string[]) as int {
-        return b[0] as int - a[0] as int;
+      playerTimes.sort(function (a as string[], b as string[]) as int {
+        return b[0] as int - a[0];
       });
 
       playerList = [] as IData;
@@ -190,7 +191,7 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
         playerList += [{
           text : '', color: 'dark_gray', extra: [
             first ? '`' : ', `', name, '` ',
-            {text: formatPlayTimeFromTicks(playTimeMin), color: 'gray'},
+            { text: formatPlayTimeFromTicks(playTimeMin), color: 'gray' },
           ],
         }] as IData;
         first = false;
@@ -248,14 +249,14 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
       // notifyEveryone(e.player, 'e2ee.player_achieved', e.reward.quest.titleText.formattedText);
       val data as IData = {
         text : '### `', color: 'dark_gray', extra: [
-          {text: e.player.nickname(), color: 'aqua'},
+          { text: e.player.nickname(), color: 'aqua' },
           '` ',
-          {text: 'achieved', color: 'gray'},
+          { text: 'achieved', color: 'gray' },
           ' __',
-          {text: 'Conflux ' ~ k.toUpperCase(), underlined: true, color: 'gray'},
+          { text: 'Conflux ' ~ k.toUpperCase(), underlined: true, color: 'gray' },
           '__ ',
-          {text: 'after ', color: 'gray'},
-          {text: formatPlayTime(forgePlayer), color: 'gold'},
+          { text: 'after ', color: 'gray' },
+          { text: formatPlayTime(forgePlayer), color: 'gold' },
           ' of play! ```Congrats!```',
         ] };
       tellraw(data);
