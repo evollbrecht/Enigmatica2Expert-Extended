@@ -23,7 +23,7 @@
 	{
 		uid: "61bcac4a",
 		type: "item",
-		title: "Seal Symbol",
+		title: "{q.thaumcraft.mithminite_scythe.task.1}",
 		items: [{
 			id: "thaumadditions:seal_symbol",
 			tag: {

@@ -70,7 +70,7 @@
 	tasks: [{
 		uid: "145ad13a",
 		type: "checkmark",
-		title: "Abeia + avore"
+		title: "{q.forestry.the_forestry_path_.task.0}"
 	}],
 	rewards: [{
 		uid: "6b64e6b3",

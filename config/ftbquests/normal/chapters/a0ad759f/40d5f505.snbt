@@ -12,7 +12,7 @@
 	tasks: [{
 		uid: "a3ae5095",
 		type: "custom",
-		title: "Make robot use something",
+		title: "{q.computers.robot_use.task.0}",
 		tags: [
 			"robotuse"
 		]

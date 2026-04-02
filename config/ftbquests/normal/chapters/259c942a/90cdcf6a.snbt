@@ -126,7 +126,7 @@
 	{
 		uid: "9638a488",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.immersive_engineer.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

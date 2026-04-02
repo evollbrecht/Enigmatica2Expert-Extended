@@ -90,7 +90,7 @@
 	{
 		uid: "28f095d0",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.animals.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

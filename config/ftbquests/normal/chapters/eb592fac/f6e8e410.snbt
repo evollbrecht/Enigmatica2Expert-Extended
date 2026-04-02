@@ -19,7 +19,7 @@
 		uid: "f43c9a27",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.rftools.rftools.reward.1}",
 		tags: [
 			"chapstart"
 		],

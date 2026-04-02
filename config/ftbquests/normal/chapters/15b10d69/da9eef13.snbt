@@ -19,7 +19,7 @@
 		uid: "e827f682",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.industrial_foregoing.industrial_foregoing.reward.1}",
 		tags: [
 			"chapstart"
 		],

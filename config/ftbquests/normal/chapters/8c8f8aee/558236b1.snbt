@@ -88,7 +88,7 @@
 	{
 		uid: "cf345fc7",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.actually_additions.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

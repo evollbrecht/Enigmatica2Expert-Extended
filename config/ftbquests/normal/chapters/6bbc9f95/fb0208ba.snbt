@@ -176,7 +176,7 @@
 	{
 		uid: "984586a0",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.thaumcraft.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

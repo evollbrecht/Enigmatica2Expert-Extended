@@ -28,7 +28,7 @@
 		uid: "5b1dab3d",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.computers.computers.reward.1}",
 		tags: [
 			"chapstart"
 		],

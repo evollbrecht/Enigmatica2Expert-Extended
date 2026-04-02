@@ -14,7 +14,7 @@
 	tasks: [{
 		uid: "8e8c980f",
 		type: "item",
-		title: "List",
+		title: "{q.getting_started.terminals.task.0}",
 		items: [{
 			item: "vaultopic:vice"
 		},

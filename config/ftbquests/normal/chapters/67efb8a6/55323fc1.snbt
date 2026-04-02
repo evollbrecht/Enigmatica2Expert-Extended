@@ -84,7 +84,7 @@
 	{
 		uid: "0db5a0ee",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.draconic_evolution.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

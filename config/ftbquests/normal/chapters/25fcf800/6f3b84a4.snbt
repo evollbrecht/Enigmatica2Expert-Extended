@@ -79,7 +79,7 @@
 	{
 		uid: "e07348ea",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.environmental_tech.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

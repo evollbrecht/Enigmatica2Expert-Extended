@@ -102,7 +102,7 @@
 	{
 		uid: "8fda17ec",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.extra_utilities.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

@@ -102,7 +102,7 @@
 	{
 		uid: "284ff24b",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.mekanism.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

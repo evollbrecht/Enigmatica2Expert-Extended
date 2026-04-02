@@ -19,7 +19,7 @@
 	tasks: [{
 		uid: "61913e9b",
 		type: "checkmark",
-		title: "Rifts"
+		title: "{q.thaumcraft.rifts.task.0}"
 	}],
 	rewards: [{
 		uid: "fd58ee06",

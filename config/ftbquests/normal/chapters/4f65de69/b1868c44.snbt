@@ -47,7 +47,7 @@
 	{
 		uid: "c2887fbc",
 		type: "custom",
-		title: "Grant access to the Nether",
+		title: "{q.getting_started.harvest_level_7.reward.1}",
 		auto: "no_toast"
 	}]
 }

@@ -19,7 +19,7 @@
 		uid: "ea79d193",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.thermal_expansion.thermal_expansion.reward.1}",
 		tags: [
 			"chapstart"
 		],

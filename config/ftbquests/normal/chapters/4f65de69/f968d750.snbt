@@ -41,7 +41,7 @@
 	{
 		uid: "b20d2027",
 		type: "custom",
-		title: "Pin quest \"What is this and how do i get rid of it?\"",
+		title: "{q.getting_started.wood.reward.2}",
 		tags: [
 			"pin_another_quest"
 		],

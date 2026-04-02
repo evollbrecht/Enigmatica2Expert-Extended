@@ -20,7 +20,7 @@
 	{
 		uid: "975179d1",
 		type: "item",
-		title: "Any Circuit Board",
+		title: "{q.forestry.soldering_iron.task.1}",
 		items: [{
 			id: "forestry:chipsets",
 			tag: {
@@ -52,7 +52,7 @@
 	{
 		uid: "3a80e3b9",
 		type: "item",
-		title: "Any Electrun Tube",
+		title: "{q.forestry.soldering_iron.task.2}",
 		items: [{
 			item: "forestry:thermionic_tubes 1 2"
 		},

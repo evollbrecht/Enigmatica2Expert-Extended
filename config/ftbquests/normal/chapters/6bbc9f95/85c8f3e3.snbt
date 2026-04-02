@@ -19,7 +19,7 @@
 	rewards: [{
 		uid: "bccad2fb",
 		type: "choice",
-		title: "Any meat",
+		title: "{q.thaumcraft.meaty_orb.reward.0}",
 		icon: "tconevo:edible",
 		table: 128
 	}]

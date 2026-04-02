@@ -68,7 +68,7 @@
 		uid: "9724b07a",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.animals.animals_entry.reward.1}",
 		tags: [
 			"chapstart"
 		],

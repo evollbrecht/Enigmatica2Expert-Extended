@@ -18,7 +18,7 @@
 		uid: "b1fa45a0",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.ender_io.ender_io.reward.1}",
 		tags: [
 			"chapstart"
 		],

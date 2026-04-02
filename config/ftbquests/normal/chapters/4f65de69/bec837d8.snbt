@@ -14,7 +14,7 @@
 	tasks: [{
 		uid: "66a67240",
 		type: "item",
-		title: "Tanks",
+		title: "{q.getting_started.tanks.task.0}",
 		items: [{
 			id: "thermalexpansion:reservoir",
 			tag: {}

@@ -94,7 +94,7 @@
 	{
 		uid: "c8ad188e",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.industrialcraft.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

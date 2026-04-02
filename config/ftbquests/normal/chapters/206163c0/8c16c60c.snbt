@@ -82,7 +82,7 @@
 	{
 		uid: "e517a49d",
 		type: "item",
-		title: "Any Tree Pollen",
+		title: "{q.forestry.the_pollen_path_.task.1}",
 		tags: [
 			"pollen_fertile"
 		],

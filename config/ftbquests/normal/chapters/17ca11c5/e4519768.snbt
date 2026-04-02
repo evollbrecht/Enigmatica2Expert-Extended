@@ -13,7 +13,7 @@
 	tasks: [{
 		uid: "5e3ef723",
 		type: "custom",
-		title: "Reach 1000✪",
+		title: "{q.bragging_rights._omnipotence_.task.0}",
 		tags: [
 			"omnipotence"
 		],

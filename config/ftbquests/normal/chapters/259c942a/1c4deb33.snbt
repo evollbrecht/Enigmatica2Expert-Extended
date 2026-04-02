@@ -18,7 +18,7 @@
 		uid: "f4cace2a",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.immersive_engineer.immersive_engineer.reward.1}",
 		tags: [
 			"chapstart"
 		],

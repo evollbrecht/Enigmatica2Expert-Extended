@@ -18,7 +18,7 @@
 		uid: "32e17b74",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.actually_additions.actually_additions.reward.1}",
 		tags: [
 			"chapstart"
 		],

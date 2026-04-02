@@ -10,7 +10,7 @@
 	tasks: [{
 		uid: "dfe86ba9",
 		type: "checkmark",
-		title: "Brews effects",
+		title: "{q.utils.brews_effects.task.0}",
 		icon: {
 			id: "rustic:fluid_bottle",
 			tag: {

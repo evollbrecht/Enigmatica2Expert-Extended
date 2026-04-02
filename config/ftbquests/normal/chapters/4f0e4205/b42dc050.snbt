@@ -37,7 +37,7 @@
 		uid: "58c634b6",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.twilight_forest.enter_the_twilight.reward.3}",
 		tags: [
 			"chapstart"
 		],

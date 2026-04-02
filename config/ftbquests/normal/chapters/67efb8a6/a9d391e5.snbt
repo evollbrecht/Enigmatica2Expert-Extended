@@ -19,7 +19,7 @@
 		uid: "e022dc3c",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.draconic_evolution.draconic_evolution.reward.1}",
 		tags: [
 			"chapstart"
 		],

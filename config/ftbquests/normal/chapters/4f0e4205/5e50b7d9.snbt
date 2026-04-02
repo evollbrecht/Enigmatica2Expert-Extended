@@ -13,7 +13,7 @@
 	tasks: [{
 		uid: "f83bf9e6",
 		type: "interaction",
-		title: "Touch Timewood Clock",
+		title: "{q.twilight_forest.touch_timewood_clock.task.0}",
 		icon: "twilightforest:magic_log_core",
 		match_type: "block_id",
 		match: "twilightforest:magic_log_core"

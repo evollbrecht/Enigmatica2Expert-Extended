@@ -11,7 +11,7 @@
 	tasks: [{
 		uid: "2624487d",
 		type: "interaction",
-		title: "Interract with Goose",
+		title: "{q.animals.geese.task.0}",
 		icon: {
 			id: "draconicevolution:mob_soul",
 			tag: {

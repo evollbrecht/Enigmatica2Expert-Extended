@@ -29,7 +29,7 @@
 		uid: "8c508200",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.utils.utilities.reward.2}",
 		tags: [
 			"chapstart"
 		],

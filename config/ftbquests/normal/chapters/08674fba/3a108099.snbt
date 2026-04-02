@@ -85,7 +85,7 @@
 	{
 		uid: "4a3dc345",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.advanced_rocketry.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

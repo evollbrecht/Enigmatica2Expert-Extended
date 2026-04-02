@@ -12,7 +12,7 @@
 	tasks: [{
 		uid: "6c83791e",
 		type: "custom",
-		title: "Make robot hit something",
+		title: "{q.computers.robot_swing.task.0}",
 		tags: [
 			"robotswing"
 		]

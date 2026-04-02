@@ -84,7 +84,7 @@
 	{
 		uid: "c72a3644",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.nuclearcraft_overh.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

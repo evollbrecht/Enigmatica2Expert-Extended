@@ -38,7 +38,7 @@
 		uid: "505b1666",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.blood_magic.blood_magic.reward.2}",
 		tags: [
 			"chapstart"
 		],

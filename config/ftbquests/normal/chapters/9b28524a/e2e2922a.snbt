@@ -103,7 +103,7 @@
 	{
 		uid: "93889d7c",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.blood_magic.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

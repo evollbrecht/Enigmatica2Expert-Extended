@@ -39,7 +39,7 @@
 	rewards: [{
 		uid: "2b6a42e0",
 		type: "custom",
-		title: "Give next Conflux tier role",
+		title: "{q.gates.conflux_v.reward.0}",
 		tags: [
 			"conflux_v",
 			"personal"
@@ -49,7 +49,7 @@
 	{
 		uid: "e1b6ea65",
 		type: "custom",
-		title: "Broadcast message for everyone",
+		title: "{q.gates.conflux_v.reward.1}",
 		tags: [
 			"conflux_v",
 			"team"

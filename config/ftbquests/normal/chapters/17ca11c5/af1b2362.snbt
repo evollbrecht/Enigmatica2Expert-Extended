@@ -21,7 +21,7 @@
 	rewards: [{
 		uid: "821225aa",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.bragging_rights.creative_items.reward.0}",
 		tags: [
 			"packcomplete"
 		],
@@ -36,7 +36,7 @@
 	{
 		uid: "1654ec90",
 		type: "custom",
-		title: "Show stats to everyone",
+		title: "{q.bragging_rights.creative_items.reward.2}",
 		tags: [
 			"show_stats"
 		],

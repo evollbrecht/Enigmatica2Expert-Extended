@@ -12,7 +12,7 @@
 	tasks: [{
 		uid: "822dd9d0",
 		type: "interaction",
-		title: "⚑ Touch {tile.twilightforest.CastleBrick.0.name}",
+		title: "{q.twilight_forest.final_plateau.task.0}",
 		icon: {
 			id: "twilightforest:castle_brick",
 			tag: {

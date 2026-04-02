@@ -86,7 +86,7 @@
 	{
 		uid: "e360be64",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.astral_sorcery.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

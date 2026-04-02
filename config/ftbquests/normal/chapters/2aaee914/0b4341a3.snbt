@@ -25,7 +25,7 @@
 		uid: "0c357f18",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.mekanism.mekanism.reward.1}",
 		tags: [
 			"chapstart"
 		],

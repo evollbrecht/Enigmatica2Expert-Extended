@@ -13,7 +13,7 @@
 	tasks: [{
 		uid: "33db62b4",
 		type: "custom",
-		title: "Skyblock",
+		title: "{q.getting_started.skyblock.task.0}",
 		tags: [
 			"skyblock"
 		],

@@ -14,7 +14,7 @@
 	tasks: [{
 		uid: "c09f96fa",
 		type: "item",
-		title: "Chargers",
+		title: "{q.getting_started.chargers.task.0}",
 		items: [{
 			item: "enderio:item_inventory_charger_simple"
 		},

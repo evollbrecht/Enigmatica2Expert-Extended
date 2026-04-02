@@ -17,7 +17,7 @@
 	tasks: [{
 		uid: "002a7d1c",
 		type: "interaction",
-		title: "Interact with Foxhound",
+		title: "{q.animals.interact_with_foxh.task.0}",
 		icon: {
 			id: "draconicevolution:mob_soul",
 			tag: {

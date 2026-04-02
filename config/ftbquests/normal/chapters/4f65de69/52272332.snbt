@@ -20,7 +20,7 @@
 	tasks: [{
 		uid: "51f66951",
 		type: "item",
-		title: "List",
+		title: "{q.getting_started.big_chests.task.0}",
 		items: [{
 			item: "rustic:vase"
 		},

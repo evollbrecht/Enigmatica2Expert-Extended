@@ -136,7 +136,7 @@
 	{
 		uid: "e6a356ee",
 		type: "custom",
-		title: "Notify everyone",
+		title: "{q.utils.the_chapter_is_com.reward.1}",
 		tags: [
 			"chapcomplete"
 		],

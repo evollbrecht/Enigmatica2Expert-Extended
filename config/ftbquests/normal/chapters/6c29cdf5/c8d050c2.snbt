@@ -23,7 +23,7 @@
 		uid: "0b479bc5",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.botania.botania.reward.1}",
 		tags: [
 			"chapstart"
 		],

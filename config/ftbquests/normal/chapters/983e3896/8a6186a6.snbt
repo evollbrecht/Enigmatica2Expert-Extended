@@ -19,7 +19,7 @@
 		uid: "89db2c09",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.astral_sorcery.astral_sorcery.reward.1}",
 		tags: [
 			"chapstart"
 		],

@@ -18,7 +18,7 @@
 		uid: "0f0f0c23",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.advanced_rocketry.holo_projector.reward.1}",
 		tags: [
 			"chapstart"
 		],

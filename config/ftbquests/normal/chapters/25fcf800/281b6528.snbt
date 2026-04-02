@@ -18,7 +18,7 @@
 		uid: "7eb0c75d",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.environmental_tech.environmental_tech.reward.1}",
 		tags: [
 			"chapstart"
 		],

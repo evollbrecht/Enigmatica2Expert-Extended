@@ -24,7 +24,7 @@
 		uid: "c63795f0",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.forestry.forestry.reward.2}",
 		tags: [
 			"chapstart"
 		],

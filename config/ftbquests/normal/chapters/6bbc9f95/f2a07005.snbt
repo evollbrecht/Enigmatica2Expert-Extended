@@ -18,7 +18,7 @@
 	tasks: [{
 		uid: "dae25140",
 		type: "item",
-		title: "Modifier Effect",
+		title: "{q.thaumcraft.focus_modifiers.task.0}",
 		items: [{
 			id: "thaumicaugmentation:augment_builder_effect",
 			tag: {
@@ -42,7 +42,7 @@
 	{
 		uid: "1888442f",
 		type: "item",
-		title: "Modifier Base",
+		title: "{q.thaumcraft.focus_modifiers.task.1}",
 		items: [{
 			id: "thaumicaugmentation:augment_builder_power",
 			tag: {

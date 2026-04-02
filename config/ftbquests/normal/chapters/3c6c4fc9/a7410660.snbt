@@ -23,7 +23,7 @@
 		uid: "df79969c",
 		type: "custom",
 		team_reward: 1b,
-		title: "Notify everyone",
+		title: "{q.nuclearcraft_overh.basic_plating.reward.1}",
 		tags: [
 			"chapstart"
 		],
