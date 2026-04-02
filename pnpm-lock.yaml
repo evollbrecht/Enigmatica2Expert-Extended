@@ -30,9 +30,6 @@ importers:
       '@conventional-changelog/git-client':
         specifier: ^2.6.0
         version: 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
-      '@types/adm-zip':
-        specifier: ^0.5.8
-        version: 0.5.8
       '@types/fast-levenshtein':
         specifier: ^0.0.4
         version: 0.0.4
@@ -42,24 +39,15 @@ importers:
       '@types/language-name-map':
         specifier: ^0.3.4
         version: 0.3.4
-      '@types/memoizee':
-        specifier: ^0.4.12
-        version: 0.4.12
       '@types/node':
         specifier: ^25.5.0
         version: 25.5.0
       '@types/ssh2-sftp-client':
         specifier: ^9.0.6
         version: 9.0.6
-      '@types/terminal-kit':
-        specifier: ^2.5.7
-        version: 2.5.7
       '@types/yargs':
         specifier: ^17.0.35
         version: 17.0.35
-      adm-zip:
-        specifier: ^0.5.16
-        version: 0.5.16
       boxen:
         specifier: ^8.0.1
         version: 8.0.1
@@ -123,9 +111,6 @@ importers:
       mc-benchmark:
         specifier: ^2.1.0
         version: 2.1.0
-      node-fetch:
-        specifier: ^3.3.2
-        version: 3.3.2
       pathe:
         specifier: ^2.0.3
         version: 2.0.3
@@ -601,9 +586,6 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@types/adm-zip@0.5.8':
-    resolution: {integrity: sha512-RVVH7QvZYbN+ihqZ4kX/dMiowf6o+Jk1fNwiSdx0NahBJLU787zkULhGhJM8mf/obmLGmgdMM0bXsQTmyfbR7Q==}
-
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
 
@@ -631,14 +613,8 @@ packages:
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
-  '@types/memoizee@0.4.12':
-    resolution: {integrity: sha512-EdtpwNYNhe3kZ+4TlXj/++pvBoU0KdrAICMzgI7vjWgu9sIvvUhu9XR8Ks4L6Wh3sxpZ22wkZR7yCLAqUjnZuQ==}
-
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
-
-  '@types/nextgen-events@1.1.1':
-    resolution: {integrity: sha512-5ah4pA0NmgvlUp5BAAOj3VogC31OD7ZbU+VC9DYpy5o8zQKqnxCjnnckUDsCjGnynMwzV0NUlzj23Y5/y/xfXA==}
 
   '@types/node@18.19.6':
     resolution: {integrity: sha512-X36s5CXMrrJOs2lQCdDF68apW4Rfx9ixYMawlepwmE4Anezv/AV2LSpKD1Ub8DAc+urp5bk0BGZ6NtmBitfnsg==}
@@ -657,9 +633,6 @@ packages:
 
   '@types/ssh2@1.11.18':
     resolution: {integrity: sha512-7eH4ppQMFlzvn//zhwD54MWaITR1aSc1oFBye9vb76GZ2Y9PSFYdwVIwOlxRXWs5+1hifntXyt+8a6SUbOD7Hg==}
-
-  '@types/terminal-kit@2.5.7':
-    resolution: {integrity: sha512-IpbCBFSb3OqCEZBZlk368tGftqss88eNQaJdD9msEShRbksEiVahEqroONi60ppUt9/arLM6IDrHMx9jpzzCOw==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -782,10 +755,6 @@ packages:
     resolution: {integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-
-  adm-zip@0.5.16:
-    resolution: {integrity: sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==}
-    engines: {node: '>=12.0'}
 
   agent-base@7.1.4:
     resolution: {integrity: sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==}
@@ -1137,10 +1106,6 @@ packages:
 
   curseforge-v2@1.5.0:
     resolution: {integrity: sha512-jokU4/qiyp2RH0ot5ACx/DUyGUpnvk8Tb6VgV0A8e9wtfHf64jmnuHYxHVwqf6/hYvYuNPMW4IkvrhE2o5+QVA==}
-
-  data-uri-to-buffer@4.0.0:
-    resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}
-    engines: {node: '>= 12'}
 
   data-uri-to-buffer@6.0.2:
     resolution: {integrity: sha512-7hvf7/GW8e86rW0ptuwS3OcBGDjIi6SZva7hCyWC0yYry2cOPmLIjXAUHI6DK2HsnwJd9ifmt57i8eV2n4YNpw==}
@@ -1572,10 +1537,6 @@ packages:
       picomatch:
         optional: true
 
-  fetch-blob@3.2.0:
-    resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
-    engines: {node: ^12.20 || >= 14.13}
-
   file-entry-cache@8.0.0:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
     engines: {node: '>=16.0.0'}
@@ -1615,10 +1576,6 @@ packages:
   format@0.2.2:
     resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
     engines: {node: '>=0.4.x'}
-
-  formdata-polyfill@4.0.10:
-    resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==}
-    engines: {node: '>=12.20.0'}
 
   fs-extra@11.3.4:
     resolution: {integrity: sha512-CTXd6rk/M3/ULNQj8FBqBWHYBVYybQ3VPBw0xGKFe3tuH7ytT6ACnvzpIQ3UZtB8yvUKC2cXn1a+x+5EVQLovA==}
@@ -2133,15 +2090,6 @@ packages:
   netmask@2.0.2:
     resolution: {integrity: sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==}
     engines: {node: '>= 0.4.0'}
-
-  node-domexception@1.0.0:
-    resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
-    engines: {node: '>=10.5.0'}
-    deprecated: Use your platform's native DOMException instead
-
-  node-fetch@3.3.2:
-    resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   node-releases@2.0.36:
     resolution: {integrity: sha512-TdC8FSgHz8Mwtw9g5L4gR/Sh9XhSP/0DEkQxfEFXOpiul5IiHgHan2VhYYb6agDSfp4KuvltmGApc8HMgUrIkA==}
@@ -2692,10 +2640,6 @@ packages:
     resolution: {integrity: sha512-3hu+tD8YzSLGuFYtPRb48vdhKMi0KQV5sn+uWr8+7dMEq/2G/dtLrdDinkLjqq5TIbIBjYJ4Ax/n3YiaW7QM8A==}
     engines: {node: 20 || >=22}
 
-  web-streams-polyfill@3.2.1:
-    resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==}
-    engines: {node: '>= 8'}
-
   webdriver-bidi-protocol@0.2.11:
     resolution: {integrity: sha512-Y9E1/oi4XMxcR8AT0ZC4OvYntl34SPgwjmELH+owjBr0korAX4jKgZULBWILGCVGdVCQ0dodTToIETozhG8zvA==}
 
@@ -3135,10 +3079,6 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@types/adm-zip@0.5.8':
-    dependencies:
-      '@types/node': 25.5.0
-
   '@types/debug@4.1.12':
     dependencies:
       '@types/ms': 2.1.0
@@ -3166,11 +3106,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/memoizee@0.4.12': {}
-
   '@types/ms@2.1.0': {}
-
-  '@types/nextgen-events@1.1.1': {}
 
   '@types/node@18.19.6':
     dependencies:
@@ -3193,10 +3129,6 @@ snapshots:
   '@types/ssh2@1.11.18':
     dependencies:
       '@types/node': 18.19.6
-
-  '@types/terminal-kit@2.5.7':
-    dependencies:
-      '@types/nextgen-events': 1.1.1
 
   '@types/unist@3.0.3': {}
 
@@ -3375,8 +3307,6 @@ snapshots:
       acorn: 8.16.0
 
   acorn@8.16.0: {}
-
-  adm-zip@0.5.16: {}
 
   agent-base@7.1.4: {}
 
@@ -3738,8 +3668,6 @@ snapshots:
       axios: 1.10.0
     transitivePeerDependencies:
       - debug
-
-  data-uri-to-buffer@4.0.0: {}
 
   data-uri-to-buffer@6.0.2: {}
 
@@ -4256,11 +4184,6 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.3
 
-  fetch-blob@3.2.0:
-    dependencies:
-      node-domexception: 1.0.0
-      web-streams-polyfill: 3.2.1
-
   file-entry-cache@8.0.0:
     dependencies:
       flat-cache: 4.0.1
@@ -4294,10 +4217,6 @@ snapshots:
       mime-types: 2.1.35
 
   format@0.2.2: {}
-
-  formdata-polyfill@4.0.10:
-    dependencies:
-      fetch-blob: 3.2.0
 
   fs-extra@11.3.4:
     dependencies:
@@ -4978,14 +4897,6 @@ snapshots:
 
   netmask@2.0.2: {}
 
-  node-domexception@1.0.0: {}
-
-  node-fetch@3.3.2:
-    dependencies:
-      data-uri-to-buffer: 4.0.0
-      fetch-blob: 3.2.0
-      formdata-polyfill: 4.0.10
-
   node-releases@2.0.36: {}
 
   normalize-package-data@7.0.1:
@@ -5569,8 +5480,6 @@ snapshots:
       - supports-color
 
   walk-up-path@4.0.0: {}
-
-  web-streams-polyfill@3.2.1: {}
 
   webdriver-bidi-protocol@0.2.11: {}
 

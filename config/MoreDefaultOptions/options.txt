@@ -13,7 +13,7 @@ fboEnable:true
 fancyGraphics:true
 ao:2
 renderClouds:true
-resourcePacks:["Better Gendustry v1.0.zip","Sonomagy TC6 v1.6.zip","BloomTech-1.2.0.zip","BloomTech - E2EE Addon"]
+resourcePacks:["Better Gendustry v1.0.zip","Sonomagy TC6 v1.7.zip","BloomTech-1.2.0.zip","BloomTech - E2EE Addon"]
 incompatibleResourcePacks:[]
 lang:en_us
 chatVisibility:0
@@ -262,6 +262,7 @@ key_key.plustic_toggle_tool.desc:51:ALT:56
 key_key.porterNextDestination:27:NONE:
 key_key.porterPrevDestination:26:NONE:
 key_key.previous_item.desc:0:NONE:
+key_key.query_interface.desc:-100:SHIFT:42
 key_key.range:18:ALT:56
 key_key.reloadSoundSystem:66:SHIFT:42
 key_key.right:32:NONE:

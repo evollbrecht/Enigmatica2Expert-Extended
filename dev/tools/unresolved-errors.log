@@ -1,8 +1,9 @@
-[CrashAssistantApp process logger/ERROR] [ChildProcessLogger]: WARNING: A restricted method in java.lang.System has been called
-[CrashAssistantApp process logger/ERROR] [ChildProcessLogger]: WARNING: java.lang.System::load has been called by com.formdev.flatlaf.util.NativeLibrary in an unnamed module (file:/D:/mc/E2E-E/local/crash_assistant/28740_1774688820437_app.jar)
-[CrashAssistantApp process logger/ERROR] [ChildProcessLogger]: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
-[CrashAssistantApp process logger/ERROR] [ChildProcessLogger]: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
-[CrashAssistantApp process logger/ERROR] [ChildProcessLogger]: 
+[Client thread/ERROR] [daomephsta_loot_shared.sanity_checks]: Duplicate pool name 'shader' in table 'twilightforest:entities/questing_ram_rewards'. Duplicate added as 'shader0'.
+Report this to the loot adder.
+[Client thread/ERROR] [daomephsta_loot_shared.sanity_checks]: Duplicate pool name 'marbled_cheese_golem' in table 'rats:marbled_cheese_golem'. Duplicate added as 'marbled_cheese_golem0'.
+Report this to the loot adder.
+[Client thread/ERROR] [daomephsta_loot_shared.sanity_checks]: Duplicate pool name 'amphithere' in table 'iceandfire:amphithere'. Duplicate added as 'amphithere0'.
+Report this to the loot adder.
 [Client thread/ERROR] [Had Enough Items]: Recipe has no output. Minecraft minecraft:air_0 class net.minecraftforge.oredict.ShapedOreRecipe
 Outputs:
 net.minecraft.item.ItemStack: [[]]
@@ -37,4 +38,4 @@ Failed to get ingredients from recipe wrapper
 
 java.lang.NullPointerException
 	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
-  [...]
+  [...]
