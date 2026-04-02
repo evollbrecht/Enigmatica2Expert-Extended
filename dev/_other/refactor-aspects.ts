@@ -5,18 +5,22 @@ import * as fs from 'node:fs'
 import { consola } from 'consola'
 import { replaceInFile } from 'replace-in-file'
 
+const ASPECT_EMOJI_MAP_REGEX = /static emojiMap as CTAspectStack\[string\] = \{([\s\S]*?)\};/
+const ASPECT_ENTRY_REGEX = /'([^']+)': (?:<aspect:(\w+)>|Aspect\.(\w+))/g
+const ASPECT_REF_REGEX = /(?:<aspect:(\w+)>|Aspect\.(\w+))(?:\s*\*\s*(\d+))?/
+const ASPECT_BRACKET_REGEX = /\[((?:\s*<?(?:aspect:|Aspect\.)\w+>?\s*(?:\*\s*\d+\s*)?,?)+)\]/gi
+
 const aspectToEmojiMap = new Map<string, string>()
 
 function parseAspectEmojiMap() {
-  const content = fs.readFileSync('scripts/mods/thaumcraft/aspect.zs', 'utf-8')
-  const emojiMapContent = content.match(/static emojiMap as CTAspectStack\[string\] = \{([\s\S]*?)\};/)
+  const content = fs.readFileSync('scripts/mods/thaumcraft/globals.zs', 'utf-8')
+  const emojiMapContent = content.match(ASPECT_EMOJI_MAP_REGEX)
   if (!emojiMapContent) {
-    throw new Error('Could not find emojiMap in aspect.zs')
+    throw new Error('Could not find emojiMap in thaumcraft/globals.zs')
   }
 
-  const regex = /'([^']+)': (?:<aspect:(\w+)>|Aspect\.(\w+))/g
   let match: null | RegExpExecArray
-  while ((match = regex.exec(emojiMapContent[1])) !== null) {
+  while ((match = ASPECT_ENTRY_REGEX.exec(emojiMapContent[1])) !== null) {
     const emoji = match[1]
     const aspectName = match[2] || match[3]
     aspectToEmojiMap.set(aspectName.toLowerCase(), emoji)
@@ -26,7 +30,7 @@ function parseAspectEmojiMap() {
 function aspectsToString(aspects: string): string {
   const aspectParts = aspects.split(',').map(s => s.trim()).filter(s => s)
   const emojiStrings = aspectParts.map((part) => {
-    const match = part.match(/(?:<aspect:(\w+)>|Aspect\.(\w+))(?:\s*\*\s*(\d+))?/)
+    const match = part.match(ASPECT_REF_REGEX)
     if (match) {
       const aspectName = (match[1] || match[2]).toLowerCase()
       const amount = match[3] ? Number.parseInt(match[3], 10) : 1
@@ -50,13 +54,15 @@ async function run() {
 
     const results = await replaceInFile({
       files: 'scripts/**/*.zs',
-      from : /\[((?:\s*<?(?:aspect:|Aspect\.)\w+>?\s*(?:\*\s*\d+\s*)?,?)+)\]/gi,
+      from : ASPECT_BRACKET_REGEX,
       to   : (_m: string, aspects: string) => `Aspects('${aspectsToString(aspects)}')`,
     })
 
     const changedFiles = results
       .filter(result => result.hasChanged)
       .map(result => result.file)
+
+    consola.info(`Scanned ${results.length} files`)
 
     if (changedFiles.length > 0) {
       consola.success(`Successfully refactored ${changedFiles.length} files:\n- ${changedFiles.join('\n- ')}`)
