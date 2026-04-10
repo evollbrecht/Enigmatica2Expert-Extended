@@ -27,4 +27,4 @@ for info in LiquidStabilizerInfoList {
 }
 
 mods.nuclearcraft.Registration.registerTurbineCoil('basestabilizer', 0.20, 'one basemagnet coil');
-mods.nuclearcraft.Registration.registerTurbineCoil('antideuteriumstabilizer', 2.50, 'one antihydrogenmagnet coil || one iodinestabilizer coil');
+mods.nuclearcraft.Registration.registerTurbineCoil('antideuteriumstabilizer', 1500.00, 'one antihydrogenmagnet coil || one iodinestabilizer coil');
