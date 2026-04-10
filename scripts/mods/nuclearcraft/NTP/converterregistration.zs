@@ -15,4 +15,4 @@ for info in ConverterInfoList {
 }
 
 mods.nuclearcraft.Registration.registerTurbineCoil('baseconverter', 0.20, 'one basemagnet coil');
-mods.nuclearcraft.Registration.registerTurbineCoil('antitritiumconverter', 3.00, 'one antideuteriumstabilizer coil || one ytterbiumconverter coil');
+mods.nuclearcraft.Registration.registerTurbineCoil('antitritiumconverter', 1800.00, 'one antideuteriumstabilizer coil || one ytterbiumconverter coil');
