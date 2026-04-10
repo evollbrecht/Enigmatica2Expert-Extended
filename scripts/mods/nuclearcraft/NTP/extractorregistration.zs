@@ -15,5 +15,5 @@ for info in ExtractorInfoList {
 }
 
 mods.nuclearcraft.Registration.registerTurbineCoil('baseextractor', 0.70, 'one baseconverter coil');
-mods.nuclearcraft.Registration.registerTurbineCoil('antiheliumextractor', 3.50, 'one antitritiumconverter coil || one osmiridiumextractor coil');
-mods.nuclearcraft.Registration.registerTurbineCoil('antihelium3extractor', 4.00, 'one antiheliumextractor coil ');
+mods.nuclearcraft.Registration.registerTurbineCoil('antiheliumextractor', 2100.00, 'one antitritiumconverter coil || one osmiridiumextractor coil');
+mods.nuclearcraft.Registration.registerTurbineCoil('antihelium3extractor', 2400.00, 'one antiheliumextractor coil ');
