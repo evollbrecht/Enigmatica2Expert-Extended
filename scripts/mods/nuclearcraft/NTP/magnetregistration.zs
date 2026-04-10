@@ -16,4 +16,4 @@ for info in MagnetInfoList {
 
 mods.nuclearcraft.Registration.registerTurbineCoil('basemagnet', 0.1, 'one bearing');
 mods.nuclearcraft.Registration.registerTurbineCoil('nakmagnet', 0.80, 'one ferroboronmagnet coil || one invarmagnet coil');
-mods.nuclearcraft.Registration.registerTurbineCoil('antihydrogenmagnet', 1.50, 'one iridiummagnet coil || one samariummagnet coil');
+mods.nuclearcraft.Registration.registerTurbineCoil('antihydrogenmagnet', 900.00, 'one iridiummagnet coil || one samariummagnet coil');
